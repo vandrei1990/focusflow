@@ -159,7 +159,6 @@ export default function Timer() {
   }
 
   const isPaused = Boolean(activeSession?.pausedAt)
-  const isRunning = Boolean(activeSession) && !isPaused
   const activeProject = projects.find((p) => p.id === (activeSession?.projectId ?? selectedProject))
 
   // Pomodoro progress
